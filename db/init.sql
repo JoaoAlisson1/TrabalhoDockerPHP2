@@ -11,12 +11,6 @@ CREATE TABLE IF NOT EXISTS aeronaves (
   PRIMARY KEY (codigo)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
--- --------------------------------------------------------
-
--- Criação do banco de dados login
-CREATE DATABASE IF NOT EXISTS login CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE login;
-
 -- Criação da tabela usuario
 CREATE TABLE IF NOT EXISTS usuario (
   codigo INT(4) NOT NULL AUTO_INCREMENT,

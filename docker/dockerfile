@@ -10,7 +10,7 @@ RUN apt-get update && apt-get install -y git \
 WORKDIR /var/www/html
 
 # Clona o projeto do GitHub na pasta Aeroclube
-RUN git clone https://github.com/JoaoAlisson1/TrabalhoDockerPHP.git /tmp/projeto \
+RUN git clone https://github.com/JoaoAlisson1/TrabalhoDockerPHP2.git /tmp/projeto \
     && mv /tmp/projeto/public_html /var/www/html/Aeroclube \
     && chown -R www-data:www-data /var/www/html/Aeroclube \
     && apt-get clean && rm -rf /var/lib/apt/lists/*
